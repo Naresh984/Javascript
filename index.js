@@ -1,4 +1,4 @@
-
+//Semicolons are not required for JavaScript programming, nevertheless I advice you to use it.
 // 1.Ways to print in javascript
 console.log('hello world how are you');
 document.write("this is document write")
@@ -40,7 +40,7 @@ var b = false;
 // console.log(a, b);
 
 //var und=undefined
-var und;
+var und         //A variable that has not been assigned a value is of type undefined. 
 // console.log(und);
 
 var n = null;
@@ -60,12 +60,12 @@ var b = 10;
 //Assignment opeartors
 var c = b;
 c += 2;//c=c+2
-c -=2;//c=c-2
+c -= 2;//c=c-2
 // console.log(c)
 
 //Comparison operator
-var x=34;
-var y=54;
+var x = 34;
+var y = 54;
 // console.log("Is x less than y",x <y)
 // console.log("Is x greater than y",x >y)
 
@@ -73,4 +73,63 @@ var y=54;
 //Logical operators AND(&&) ,OR(||), NOT(!)
 // console.log(true && true)
 // console.log(true || false)
-console.log(!false && !false)
+//console.log(!false && !false)
+
+//Funtions
+//DRY-Do not repeat yourself
+function avg(a, b) {
+    return (a + b) / 2
+}
+c = avg(3, 5)
+c1 = avg(5, 5)
+// console.log(c)
+// console.log(c1)
+
+//Conditional Operators
+var age = 19;
+// if (age > 80) {
+//     console.log('You are tooo old to drive')
+// }
+// else if (age > 18 && age < 79) {
+//     console.log('You can drive')
+// }
+// else {
+// console.log('You are too young to drive')
+// }
+
+
+//Loops:-
+//for loop
+
+var arr = [1, 2, 3, 4, 5, 6, 7]
+for (i=0;i<arr.length;i++){
+    console.log(arr[i])
+}
+
+// //or we can write it like this
+
+// arr.forEach(function(element){
+//     console.log(element)
+// })
+
+
+//WHILE LOOP
+// let j = 0; //we will use let in javascript instead of var(this was old but still used)
+// while (j < arr.length) {
+//     console.log(arr[j])
+//     j++
+// }
+
+//Do Loop
+// do {
+//     console.log(arr[j])
+//     j++
+// } while (j < arr.length)
+
+//break and continue  --- taking example of for loop
+for (i=0;i<arr.length;i++){
+    if(i==3)
+    break       //replace break with continue to know the differ
+    console.log(arr[i])
+}
+
